@@ -24,7 +24,14 @@ A lightweight chatbot that responds to frequently asked questions using OpenAI's
 ---
 
 ## 📁 Folder Structure
-
+chatbot-api/
+├── index.js # Node.js backend server
+├── frontend.html # Frontend chatbot interface
+├── .env.example # Example environment config
+├── package.json # Dependencies
+├── package-lock.json
+├── node_modules/ # Installed libraries
+└── README.md # Project documentation
 
 ---
 
@@ -50,3 +57,28 @@ node index.js
 # 5. Open the chatbot
 Open the file 'frontend.html' in your browser to use the chatbot.
 
+## Security Notes
+⚠️ Never commit actual API keys or credentials to your GitHub repository.
+
+Best practices:
+
+✅ Use a .env file to store your secrets securely.
+
+✅ Add .env to your .gitignore file.
+
+❌ Don't hardcode API keys in your index.js or frontend code.
+
+✅ Share .env.example (with no real key) to guide others.
+
+If you accidentally pushed your secret:
+
+Use GitHub Push Protection to unblock or revoke the key.
+
+Remove it from git history with tools like BFG Repo-Cleaner.
+
+Regenerate the API key from OpenAI Dashboard.
+
+👤 Author
+Aryan Tyagi
+📧 Email:tyagiaryanpnp18@gmail.com
+🔗 LinkedIn
