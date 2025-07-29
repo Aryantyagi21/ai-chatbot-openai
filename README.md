@@ -1,35 +1,52 @@
-# 🤖 AI Chatbot using OpenAI API
+# 🤖 AI FAQ Chatbot using OpenAI (ChatGPT API)
 
-An AI-powered FAQ chatbot using OpenAI’s GPT model, built with Node.js and Express.js. It provides conversational responses to user queries, tailored for website FAQ automation. This project is deployed on AWS EC2.
+A lightweight chatbot that responds to frequently asked questions using OpenAI's ChatGPT API. Built using Node.js and Express, with a simple HTML frontend — perfect for demos or integration into your website.
 
 ---
 
 ## 🚀 Features
 
-- Answers predefined FAQs using OpenAI's ChatGPT API
-- Simple and responsive HTML frontend (`frontend.html`)
-- Node.js + Express.js backend to handle API requests
-- Environment variables handled securely via `.env`
-- Hosted on AWS EC2 for practical deployment
-- Fully customizable for any use case
+- Chat interface (HTML + Node.js backend)
+- Processes natural language queries using ChatGPT API
+- Easily deployable on cloud servers (like AWS EC2)
+- Clean folder structure and easy setup
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Node.js**
-- **Express.js**
-- **OpenAI API**
-- **HTML + CSS**
-- **AWS EC2 (Ubuntu)**
-- **Git & GitHub**
+- Node.js  
+- Express.js  
+- OpenAI API (ChatGPT)  
+- dotenv  
+- HTML & JavaScript (Frontend)
 
 ---
 
-## 🛠️ Installation & Setup
+## 📁 Folder Structure
 
-### 1. Clone the Repository
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/Aryantyagi21/ai-chatbot-openai.git
 cd ai-chatbot-openai
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+cp .env.example .env
+
+# Edit .env and add your OpenAI API key like:
+# OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 4. Start the backend server
+node index.js
+
+# 5. Open the chatbot
+Open the file 'frontend.html' in your browser to use the chatbot.
+
