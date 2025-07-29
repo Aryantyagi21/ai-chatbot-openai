@@ -56,6 +56,7 @@ node index.js
 
 # 5. Open the chatbot
 Open the file 'frontend.html' in your browser to use the chatbot.
+         ###For common errors and their fixes, check the [Error Screenshots](./error_screenshots/README.md).
 
 ## Security Notes
 ⚠️ Never commit actual API keys or credentials to your GitHub repository.
