@@ -1,68 +1,30 @@
-# AI Chatbot Projects – OpenAI & Custom API (Node.js)
+# 🔒 Archived Repository – ai-chatbot-openai
 
-This repository contains two separate AI chatbot implementations:
+> ⚠️ **This repository is archived and no longer maintained.**
 
----
+We have migrated the project to a newer, more structured and comprehensive version here:
 
-## 🤖 1. OpenAI API Chatbot (`openai-chatbot/`)
+👉 **[ai-chatbot-complete](https://github.com/Aryantyagi21/ai-chatbot-complete)**
 
-This is a simple chatbot that uses OpenAI’s GPT model (`gpt-3.5-turbo`) with a Node.js backend and a basic HTML frontend.
-
-### 📁 Directory: `openai-chatbot/`
-
-### Features:
-- Communicates with OpenAI's API
-- Simple web-based interface
-- Easy to run using Node.js
+Please follow the above link for the latest code, documentation, and updates.
 
 ---
 
-## 🔧 2. Custom API Chatbot (`custom-api-chatbot/`)
+### 📌 Reason for Archival
 
-This is a custom-built chatbot backend using your own static knowledge base (`faqData.js`) without any AI model.
-
-### 📁 Directory: `custom-api-chatbot/`
-
-### Features:
-- Built in Node.js
-- Uses keyword/question matching logic
-- Custom logging and folder structure
-- Ideal for specific domains like SSB/Defense FAQs
+This repo was part of an early prototype. It has been replaced by a more organized structure that includes:
+- OpenAI GPT-based Chatbot
+- Custom API Chatbot with keyword matching
+- Logging, error handling, and clean folder separation
 
 ---
 
-## 📁 Other folders:
-
-- `error_screenshots/`: Contains screenshots of errors you encountered while building the chatbot.
-- `.env.example`: Example environment variable file for reference.
-
----
-
-## 🚀 How to Run (Quick Start)
-
-### For OpenAI chatbot:
-
-```bash
-cd openai-chatbot
-npm install
-node index.js
-
-## For Custom Chatbot
-   
-   cd custom-api-chatbot
-npm install
-node index.js
-
-#Then open the frontend in your browser
-
-###📌 Notes
-Each chatbot has its own package.json and node_modules.
-
-.env files are ignored in Git for security.
-
-You can create separate README.md files inside each subfolder for deeper instructions (optional).
+✅ Thank you for visiting!
 
 👨‍💻 Author
-Aryan Tyagi – DevOps Enthusiast & Chatbot Builder
+Aryan Tyagi – DevOps Engineer & Scrum Master
 📧 Email:tyagiaryanpnp18@gmail.com
 🔗 LinkedIn
+
+
+Archive Notice: Updated README
