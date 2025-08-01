@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XploreSports Chatbot</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    #chatbox { border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: auto; }
+    .user, .bot { margin: 10px 0; }
+    .user { color: blue; }
+    .bot { color: green; }
+  </style>
+</head>
+<body>
+
+<h2>XploreSports Chatbot</h2>
+<div id="chatbox"></div>
+
+<input type="text" id="input" placeholder="Ask your question..." />
+<button onclick="sendMessage()">Send</button>
+
+<script>
+  async function sendMessage() {
+    const input = document.getElementById('input');
+    const chatbox = document.getElementById('chatbox');
+    const userMsg = input.value;
+    input.value = '';
+
+    chatbox.innerHTML += `<div class="user"><strong>You:</strong> ${userMsg}</div>`;
+
+    const response = await fetch("http://ec2-13-203-76-36.ap-south-1.compute.amazonaws.com:3000/chat", {
+
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: userMsg })
+    });
+
+    const data = await response.json();
+    chatbox.innerHTML += `<div class="bot"><strong>Bot:</strong> ${data.reply}</div>`;
+    chatbox.scrollTop = chatbox.scrollHeight;
+  }
+</script>
+
+</body>
+</html>

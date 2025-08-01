@@ -1,0 +1,23 @@
+{
+  "name": "chatbot-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "morgan": "^1.10.1",
+    "node-cron": "^4.2.1",
+    "openai": "^4.104.0",
+    "string-similarity": "^4.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
